@@ -36,18 +36,27 @@ body{
     margin: 0 auto;
 }
 
-header .container{
+header{
     background-color: orange;
+    width:100%;
     position:fixed;
-    left:0px;
-    right:0px;
     height:40px;
     z-index: 1;
 }
 
+header .container{
+    margin-top:9px;
+    color:white;
+}
+
+
 main .container{
     padding-top: 55px;
-    height:calc(100vh - 40px);
+}
+
+footer{
+    background-color: rgb(40, 40, 40);
+    height:50px;
 }
 
 .row{
