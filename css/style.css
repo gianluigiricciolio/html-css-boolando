@@ -14,6 +14,18 @@ body{
     display: flex;
 }
 
+.p-relative{
+    position:relative;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
 /*FINE UTILITY*/
 
 
@@ -25,13 +37,17 @@ body{
 }
 
 header .container{
-    position:fixed;
     background-color: orange;
+    position:fixed;
+    left:0px;
+    right:0px;
     height:40px;
+    z-index: 1;
 }
 
 main .container{
     padding-top: 55px;
+    height:calc(100vh - 40px);
 }
 
 .row{
@@ -45,7 +61,6 @@ main .container{
 
 .content{
     margin:10px;
-    border: 1px solid black;
 }
 
 .content .main-image{
@@ -66,4 +81,51 @@ main .container{
 
 .col-33:hover .main-image{
     display: none;
+}
+
+.labels{
+    position: absolute;
+    bottom:80px;
+}
+
+.label{
+    
+    font-size: 0.85em;
+    color:white;
+    font-weight: bold;
+    padding:3px 8px;
+}
+
+.red-label{
+    background-color: red;
+}
+
+.green-label{
+    background-color: green;
+}
+
+.brand{
+    font-size: 0.75em;
+}
+
+.clothes-name{
+    font-weight: bold;
+}
+
+.prices{
+    font-size: 0.80em;
+}
+
+.discount-price{
+    color:red;
+    font-weight: bold;
+}
+
+.original-price{
+    text-decoration: line-through;
+}
+
+.logo{
+    width:100px;
+    height:auto;
 }
