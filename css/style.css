@@ -4,14 +4,14 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /*UTILITY*/
 
 .d-flex{
     display: flex;
-}
-
-.p-fixed{
-    position: fixed;
 }
 
 /*FINE UTILITY*/
@@ -20,7 +20,7 @@
 /*LAYOUT*/
 
 .container{
-    max-width:1200 px;
+    max-width:1000px;
     margin: 0 auto;
 }
 
@@ -48,10 +48,22 @@ main .container{
     border: 1px solid black;
 }
 
-.content img{
+.content .main-image{
     width: 100%;
     display: block;
 }
 
 /*FINE LAYOUT*/
 
+.hover-image {
+    width:100%;
+    display:none ;
+}
+
+.col-33:hover .hover-image{
+    display: block;
+}
+
+.col-33:hover .main-image{
+    display: none;
+}
