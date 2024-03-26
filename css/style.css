@@ -3,3 +3,24 @@
     margin:0;
     box-sizing: border-box;
 }
+
+.container{
+    max-width:1200 px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-33{
+    width: calc(100%/3);
+}
+
+.content{
+    margin:10px;
+    height:300px;
+    background-color: red;
+    border: 1px solid black;
+}
